@@ -1,0 +1,16 @@
+.header{ 
+    background-color: #1C2B35; 
+    padding: 0px 100px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    height: 60px; 
+}  
+.navbar a{ 
+    color: #ffff; 
+    text-decoration: none; 
+    margin-right: 20px;
+}
+.navbar a:hover{
+    color: #ffbb00;
+}
