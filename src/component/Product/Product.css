@@ -1,0 +1,36 @@
+.productCard img{ 
+    height: 280px; 
+    width: 280px; 
+    margin: auto; 
+    border-radius: 8px; 
+    margin: 10px; 
+} 
+.productCard{ 
+    width: 300px; 
+    height: 550px; 
+    border: 1px solid grey; 
+    margin: auto; 
+    border-radius: 8px;
+    position: relative;
+} 
+.product_info h4{ 
+    margin-left: 16px; 
+    margin-top: 0px; 
+    margin-bottom: 5px;
+}
+.product_info p{ 
+    margin-left: 16px; 
+    margin-top: 16px; 
+    margin-bottom: 5px;
+} 
+.btn{ 
+    position: absolute;
+    bottom: 0; 
+    background: #ff9900;
+    border: 1px solid #95A0A7;
+    border-radius: 0px 0px 8px 8px; 
+    width: 100%;
+} 
+.btn:hover{ 
+    background-color: #ad0048;
+}
