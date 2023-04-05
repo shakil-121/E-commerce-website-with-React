@@ -4,6 +4,7 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import './Shop.css'
 
 import Product from '../Product/Product';
+import Cart from '../Cart/Cart';
 const Shop = () => {
     const [products,setProducts]=useState([]) 
     useEffect(()=>{
@@ -11,8 +12,9 @@ const Shop = () => {
         .then(res=>res.json())
         .then(data=>setProducts(data))
     },[]) 
+
+
     const [cart,setCart]=useState([]);
-    
     const addToCart=(product)=>{ 
         const newCart=[...cart,product]
         setCart(newCart);
@@ -33,9 +35,9 @@ const Shop = () => {
                 ></Product>)
             }
             </div>
-            <div className="shoppingCart"> 
-            <h3>Shopping Cart<FontAwesomeIcon icon={faShoppingCart} /></h3> 
-            <p>Add Product: {cart.length}</p>
+            <div className="shoppingCart">  
+            {/* <p>Add Product: {cart.length}</p>  */}
+                  <Cart cart={cart}></Cart>
                  </div>
              </div>
         </div>
