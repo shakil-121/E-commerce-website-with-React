@@ -1,4 +1,6 @@
 import React from 'react';  
+import Lottie from "lottie-react";
+import cartAnimation from "../../assets/116422-shopping-cart.json"; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 import '../Cart/Cart.css'
@@ -26,7 +28,8 @@ const Cart = (props) => {
            <p>Total Shipping: ${shipping.toFixed(2)}</p> 
            <p>Tax: ${tax.toFixed(2)}</p>  
            <h3>Grand Total: ${grandTotal.toFixed(2)}</h3>
-           </div>
+           </div> 
+           <Lottie className='cartAnimation' animationData={cartAnimation} loop={true} />
         </div>
     );
 };
