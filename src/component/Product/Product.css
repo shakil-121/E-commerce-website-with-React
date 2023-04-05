@@ -26,11 +26,11 @@
 .btn{ 
     position: absolute;
     bottom: 0; 
-    background: #ff9900;
+    background: #000000;
     border: 1px solid #95A0A7;
     border-radius: 0px 0px 8px 8px; 
     width: 100%;
 } 
 .btn:hover{ 
-    background-color: #ad0048;
+    background-color:  #ff9900;
 }

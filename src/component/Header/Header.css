@@ -1,16 +1,18 @@
 .header{ 
-    background-color: #1C2B35; 
+    background-color: #040e14; 
     padding: 0px 100px; 
     display: flex; 
     justify-content: space-between; 
     align-items: center; 
-    height: 60px; 
+    height: 80px; 
 }  
 .navbar a{ 
-    color: #ffff; 
+    color: #ffffff; 
     text-decoration: none; 
-    margin-right: 20px;
+    margin-right: 20px;  
+    z-index: 2;
 }
-.navbar a:hover{
-    color: #ffbb00;
+nav a:hover{
+    color: #ffbb00; 
+
 }

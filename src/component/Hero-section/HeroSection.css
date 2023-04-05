@@ -1,5 +1,8 @@
-.left-side p small{ 
+.left-side h1 small{ 
     color: #ffbb00;
+} 
+.left-side h1 small span{ 
+    color: #ff3300;
 } 
 .left-side h1{ 
   color: #000; 
@@ -18,14 +21,15 @@
     padding: 0px 100px;
 
 } 
-.hero-section img{ 
+.animation{ 
     
-    height: 350px; 
-    width: 230px; 
+    height: 450px; 
+    width: 450px; 
     justify-content: space-between; 
-    align-items: center;
-    border-radius: 10px; 
-    box-shadow: -16px 19px 0px 4px #efbd33;
+    align-items: center; 
+    overflow: hidden;
+    /* border-radius: 10px;  */
+    /* box-shadow: -16px 19px 0px 4px #efbd33; */
 } 
 .left-side button{ 
     background-color: #ffbb00; 
