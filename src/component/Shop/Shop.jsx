@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { faShoppingCart } from '@fortawesome/free-solid-svg-icons' 
 import './Shop.css'
 
 import Product from '../Product/Product';
@@ -21,6 +21,8 @@ const Shop = () => {
     return ( 
         <div>
             <h2 style={{textAlign:'center',color:'#000'}}>ALL PRODUCT</h2>
+            
+            
              <div className='shop'> 
                  <div className="products">
             {
