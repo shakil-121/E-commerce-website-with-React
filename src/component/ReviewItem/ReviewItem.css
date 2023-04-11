@@ -1,0 +1,44 @@
+.iteam{ 
+    width: 570px; 
+    display: flex; 
+    border: 1px solid #747373; 
+    border-radius: 10px; 
+    margin: 35px 150px;
+} 
+.iteam img{ 
+  height: 91px; 
+  width: 91px; 
+  border-radius: 10px; 
+  padding: 10px;
+} 
+.iteam_details{ 
+    margin-left: 10px; 
+    flex-grow: 1;
+}
+.iteam_details p{ 
+    margin: 0px 0px;
+} 
+.iteam_details h4{ 
+    margin: 10px 0px;
+} 
+.orange{ 
+    color: #ffbb00;
+}
+.delete{
+    background-color: #ff1b1b98; 
+    border-radius: 100%; 
+    width: 50px; 
+    height: 50px; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+   
+}  
+.Delete-iteam{ 
+    margin: auto 10px;
+}
+.delete-icon{ 
+    color: #ff0000ce; 
+    height: 25px; 
+    width: 25px;
+}

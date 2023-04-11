@@ -6,6 +6,7 @@ import './Shop.css'
 import Product from '../Product/Product';
 import Cart from '../Cart/Cart';
 import { addToDb, getShoppingCart } from '../../utilities/fakedb';
+import HeroSection from '../Hero-section/HeroSection';
 
 const Shop = () => {
     const [products,setProducts]=useState([]) 
@@ -70,7 +71,9 @@ const Shop = () => {
     
 
     return ( 
-        <div>
+        <div> 
+            {/* Hero section  */} 
+            <HeroSection></HeroSection>  
             <h2 style={{textAlign:'center',color:'#000'}}>ALL PRODUCT</h2>
             
             
