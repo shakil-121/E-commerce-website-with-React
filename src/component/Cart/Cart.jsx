@@ -2,12 +2,10 @@ import React from 'react';
 import Lottie from "lottie-react";
 import cartAnimation from "../../assets/116422-shopping-cart.json"; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
+import { faShoppingCart,faTrash } from '@fortawesome/free-solid-svg-icons'
 import '../Cart/Cart.css'
 
-const Cart = (props) => { 
-    const cart=props.cart;
-     console.log(cart)
+const Cart = ({cart,handleClearCart}) => { 
     let total=0;  
     let shipping=0;   
     let quantity=0;
@@ -35,9 +33,13 @@ const Cart = (props) => {
            <p>Total Price: ${total.toFixed(2)} </p> 
            <p>Total Shipping: ${shipping.toFixed(2)}</p> 
            <p>Tax: ${tax.toFixed(2)}</p>  
-           <h3>Grand Total: ${grandTotal.toFixed(2)}</h3>
+           <h3>Grand Total: ${grandTotal.toFixed(2)}</h3> 
+
+           <button onClick={handleClearCart}  className='clearCart'>
+            Clear Cart <FontAwesomeIcon   icon={faTrash} />
+           </button>
            </div> 
-           <Lottie className='cartAnimation' animationData={cartAnimation} loop={true} />
+           {/* <Lottie className='cartAnimation' animationData={cartAnimation} loop={true} /> */}
         </div>
     );
 };

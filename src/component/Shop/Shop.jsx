@@ -5,7 +5,7 @@ import './Shop.css'
 
 import Product from '../Product/Product';
 import Cart from '../Cart/Cart';
-import { addToDb, getShoppingCart } from '../../utilities/fakedb';
+import { addToDb, deleteShoppingCart, getShoppingCart } from '../../utilities/fakedb';
 import HeroSection from '../Hero-section/HeroSection';
 
 const Shop = () => {
@@ -68,7 +68,10 @@ const Shop = () => {
         addToDb(product.id);
     } 
 
-    
+    const handleClearCart=()=>{ 
+        setCart([]);
+        deleteShoppingCart();
+    }
 
     return ( 
         <div> 
@@ -89,7 +92,9 @@ const Shop = () => {
             </div>
             <div className="shoppingCart">  
             {/* <p>Add Product: {cart.length}</p>  */}
-                  <Cart cart={cart}></Cart>
+                  <Cart cart={cart}
+                   handleClearCart={handleClearCart}
+                  ></Cart>
                  </div>
              </div>
         </div>

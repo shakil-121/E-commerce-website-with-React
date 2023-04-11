@@ -3,5 +3,10 @@
     padding-left: 15px;
 } 
 .cartAnimation{ 
-    margin-top: -15px;
+    margin-top: -15px; 
+    height: 150px; 
+    width: 150px;
+} 
+.clearCart{ 
+    width: 90%;
 }
